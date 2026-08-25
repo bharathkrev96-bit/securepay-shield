@@ -1,0 +1,19 @@
+fastapi==0.115.0
+uvicorn[standard]==0.30.6
+pydantic==2.9.2
+python-multipart==0.0.9
+opencv-python-headless==4.10.0.84
+Pillow==10.4.0
+tldextract==5.1.2
+python-Levenshtein==0.25.1
+numpy==1.26.4
+
+# Optional but strongly recommended: pyzbar gives much better QR decode
+# accuracy for rotated/skewed/photographed QR codes than OpenCV's built-in
+# detector alone. The app runs fine without it (falls back automatically)
+# but QR accuracy will be noticeably lower on anything but clean, straight
+# screenshots. Needs the system `zbar` library too:
+#   macOS:         brew install zbar
+#   Ubuntu/Debian: sudo apt-get install libzbar0
+#   Windows:       usually works out of the box (DLL bundled in the wheel)
+pyzbar==0.1.9
